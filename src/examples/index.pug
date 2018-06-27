@@ -1,0 +1,27 @@
+extends html/layout.pug
+
+block content
+  #root.root
+    noscript Arghhh ! This site will not display if JavaScript is disabled ¯\_(ツ)_/¯
+    block content
+  h2 Simple
+  code.
+    import ReactCooksent from 'react-cooksent';
+    <br />
+    const Test = () => &lt;ReactCooksent />
+  button.mt-4.js-test__simple reset
+  h2 With custom options
+  code.
+    import ReactCooksent from 'react-cooksent';
+    <br /><br />
+    const Test = () =>  &lt;ReactCooksent
+    <br />
+      &nbsp;title="custom title"
+    <br />
+      &nbsp;description="custom title"
+    <br />
+      &nbsp;btnLabel="Oki"
+    <br />
+    />
+  button.mt-4.js-test__opts reset
+
